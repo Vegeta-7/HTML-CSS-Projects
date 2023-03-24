@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Lets go */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-shadow: 5px 10px 18px hsl(252, 69%, 86%);
+}
+#container1{
+    background-image: linear-gradient(180deg,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+#total{
+    border: 1px solid hsla(256, 72%, 46%, 1);
+    line-height: 1.1;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: hsla(256, 72%, 46%, 1); */
+    background-image: linear-gradient(180deg,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+#marks{
+    font-size: 48px;
+    color: white;
+}
+#mm{
+    color: hsl(241, 100%, 89%);
+}
+#heading{
+    margin: 10px 0 20px 0px;
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+}
+#remark{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+#Great{
+    font-size: 25px;
+    color: white;
+}
+#percent{
+    margin-top: 25px;
+    padding: 0 25px;
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+}
+#container2{
+    padding: 20px 20px 0px 20px;
+    width: 50%;
+}
+#Summary{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#Elements{
+    margin: 0px 0;
+}
+.ele{
+    margin: 10px 0;
+    border: 1px solid;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.marks{
+    font-weight: 700;
+}
+#react{
+    color: hsl(0, 100%, 67%);
+}
+#Reaction{
+    background-color:hsla(0, 100%, 67%,0.1);
+    border: 1px solid hsla(0, 100%, 67%,0.1);
+}
+#mem{
+    color: hsl(39, 100%, 56%);
+}
+#Memory{
+    background-color:hsla(39, 100%, 56%,0.1);
+    border: 1px solid hsla(39, 100%, 56%,0.1);
+}
+#verb{
+    color: hsl(166, 100%, 37%);
+}
+#Verbal{
+    background-color:hsla(166, 100%, 37%,0.1);
+    border: 1px solid hsla(166, 100%, 37%,0.1);
+}
+#vis{
+    color: hsl(234, 85%, 45%);
+}
+#Visual{
+    background-color:hsl(234, 85%, 45%,0.1);
+    border: 1px solid hsl(234, 85%, 45%,0.1);
+}
+#button{
+    border: 1px solid;
+    text-align: center;
+    padding: 15px;
+    margin: 40px 0 0px 0;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 30px;
+}
+@media(max-width:375px){
+    main{
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+    }#container1 {
+        width: 100%;
+        border-radius: 0 0 70px 70px;
+    }#container2{
+        width: 80%;
+    }#button{
+        margin: 30px 0px 20px;
+    }
+}
